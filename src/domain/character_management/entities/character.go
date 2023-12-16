@@ -13,14 +13,17 @@ type Character struct {
 	Traits        []Trait
 	PrimaryTrait  Trait
 	Relationships []Relationship
+	Tags          []Tag
+	Category	  Category
+	OwnerID       uuid.UUID
 }
 
 
 type Relationship struct {
-    ID          uuid.UUID // Unique identifier for the relationship
-    CharacterID string    // ID of the character this relationship pertains to
-    Type        string    // Description of the relationship type
-    Description string    // Additional details about the relationship
+    ID          uuid.UUID
+    CharacterID string
+    Type        string
+    Description string
 }
 
 func NewCharacter(name string) Character {
