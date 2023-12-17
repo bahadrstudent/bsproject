@@ -14,8 +14,8 @@ func (repo CharacterRepository) Save(id string, name string) {
 	db.Exec("INSERT INTO characters (id, name) VALUES ($1, $2)", id, name)
 }
 
-func (repo CharacterRepository) AddTrait(id string, name string, description string) {
-	db.Exec("INSERT INTO character_traits (id, character_id, name, description) VALUES ($1, $2, $3, $4)", uuid.New().String(), id, name, description)
+func (repo CharacterRepository) AddTrait(name string, description string) {
+	db.Exec("INSERT INTO characters (trait_name, trait_description) VALUES ($1, $2)", name, description)
 }
 
 func (repo CharacterRepository) AddRelationship(id string, relationship domain.Relationship) {
