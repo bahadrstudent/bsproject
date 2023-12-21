@@ -1,5 +1,5 @@
 // key cloack user domain entity
-package domain
+package membership
 
 import (
 	"github.com/google/uuid"

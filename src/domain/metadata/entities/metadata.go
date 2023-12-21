@@ -1,4 +1,4 @@
-package domain
+package metadata.entities
 
 import (
 	"github.com/google/uuid"

@@ -1,4 +1,4 @@
-package domain
+package metadata.events
 
 import (
 	"github.com/google/uuid"

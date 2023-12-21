@@ -2,16 +2,14 @@ package entities
 
 import "github.com/google/uuid"
 
-type World struct {
-	ID          string
+type Map struct {
+	ID          uuid.UUID
 	Name        string
 	Description string
-	Images      []string
-	History     string
-	Characters  []Character
-	Tags        []Tag
-	Category    Category
+	WorldID     uuid.UUID
 	OwnerID     uuid.UUID
 	CreatedAt   string
 	UpdatedAt   string
+	Scales      []string
+	Images      []string
 }

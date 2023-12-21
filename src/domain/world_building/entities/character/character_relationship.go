@@ -1,10 +1,10 @@
-package domain
+package entities
 
 import "github.com/google/uuid"
 
 type CharacterRelationship struct {
-	ID          string
-	CharacterID string
-	Type 	  string
+	ID          uuid.UUID
+	CharacterID uuid.UUID
+	Type        string
 	Description string
 }
